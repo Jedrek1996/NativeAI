@@ -4,7 +4,13 @@ import { StatusBar } from "expo-status-bar";
 import HomePageButton from "../components/HomepageButton";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { images } from "../constants";
+import { useGlobalContext } from "../context/GlobalProvider";
 export default function Index() {
+  console.log("Loading✨✨✨✨");
+  const { isLoading, isLoggedIn } = useGlobalContext();
+
+  if (!isLoading && isLoggedIn) return <Redirect href="/home" />;
+
   return (
     <SafeAreaView className="bg-primary">
       <ScrollView contentContainerStyle={{ height: "100%" }}>
