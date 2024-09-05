@@ -4,7 +4,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import { images } from "../../constants";
 import HomepageButton from "../../components/HomepageButton";
 import FormField from "../../components/FormField";
-import { signIn, createUser, getCurrentUser } from "../../lib/appwrite";
+import { signIn, getCurrentUser } from "../../lib/appwrite";
 import { Link, router } from "expo-router";
 import { useGlobalContext } from "../../context/GlobalProvider";
 const SignIn = () => {

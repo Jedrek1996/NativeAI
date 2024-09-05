@@ -7,9 +7,9 @@ import { images } from "../constants";
 import { useGlobalContext } from "../context/GlobalProvider";
 export default function Index() {
   console.log("Loading✨✨✨✨");
-  const { isLoading, isLoggedIn } = useGlobalContext();
-
-  if (!isLoading && isLoggedIn) return <Redirect href="/home" />;
+  const { isLoading, isLogged } = useGlobalContext();
+  console.log("isLOgged:" + isLogged);
+  if (!isLoading && isLogged) return <Redirect href="/home" />;
 
   return (
     <SafeAreaView className="bg-primary">
