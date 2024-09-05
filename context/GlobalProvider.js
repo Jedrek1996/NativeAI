@@ -14,9 +14,12 @@ const GlobalProvider = ({ children }) => {
     getCurrentUser()
       .then((res) => {
         if (res) {
+          console.log("Getting user results🟢");
           setIsLogged(true);
           setUser(res);
+          console.log(res);
         } else {
+          console.log("Not getting user results🔴");
           setIsLogged(false);
           setUser(null);
         }
@@ -26,6 +29,13 @@ const GlobalProvider = ({ children }) => {
       })
       .finally(() => {
         setLoading(false);
+        console.log(
+          `isLogged: ${isLogged}, ` +
+            `setIsLogged: ${typeof setIsLogged}, ` +
+            `user: ${JSON.stringify(user)}, ` +
+            `setUser: ${typeof setUser}, ` +
+            `loading: ${loading}`
+        );
       });
   }, []);
 
