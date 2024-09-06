@@ -20,4 +20,4 @@ Aora is a mobile application that allows users to create, browse, and search for
 
 Scan the QR code below to preview the app (expo go must be installed on your device. Available on play/app store):
 
-![QR Code](https://expo.dev/preview/update?message=Updated%20create%20function&updateRuntimeVersion=1.0.0&createdAt=2024-09-06T06%3A17%3A10.979Z&slug=exp&projectId=e84dea67-1270-4adb-830b-96b0863ae8ca&group=667664d5-1369-469c-9c86-1710b3569efa)
+[Preview QR Code](https://expo.dev/preview/update?message=Updated%20create%20function&updateRuntimeVersion=1.0.0&createdAt=2024-09-06T06%3A17%3A10.979Z&slug=exp&projectId=e84dea67-1270-4adb-830b-96b0863ae8ca&group=667664d5-1369-469c-9c86-1710b3569efa)
