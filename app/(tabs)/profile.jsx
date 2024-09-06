@@ -6,7 +6,7 @@ import useAppwrite from "../../lib/useAppwrite";
 import VideoCard from "../../components/VideoCard";
 import { useGlobalContext } from "../../context/GlobalProvider";
 import { icons } from "../../constants";
-import InfoBox from "../../components/Infobox";
+import InformationBox from "../../components/InformationBox";
 import { router } from "expo-router";
 
 const Profile = () => {
@@ -57,13 +57,13 @@ const Profile = () => {
                 />
               </View>
               <View className="mt-5 flex flex-row">
-                <InfoBox
+                <InformationBox
                   title={posts.length || 0}
                   subtitle="Posts"
                   titleStyles="text-xl"
                   containerStyles="mr-10"
                 />
-                <InfoBox
+                <InformationBox
                   title="1.2k"
                   subtitle="Followers"
                   titleStyles="text-xl"
